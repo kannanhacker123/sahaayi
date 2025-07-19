@@ -68,7 +68,7 @@ As of now, only the following pages are functional:
 * `app/dashboard/works/page.tsx`
 * `app/dashboard/user/page.tsx`
 
-You can view the live prototype here: **[Live Site on Vercel](https://sahaayi.vercel.app)**
+You can view the live prototype here: **[Live Site on Vercel](https://sahaayi-mocha.vercel.app/)**
 
 ---
 
