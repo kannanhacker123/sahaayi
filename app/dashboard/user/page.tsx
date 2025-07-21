@@ -218,14 +218,14 @@ export default function UserDashboard() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="flex justify-between items-center p-6 border-b bg-card">
+      <header className="flex flex-col sm:flex-row justify-between items-center p-6 border-b bg-card">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
             <HeartHandshake className="h-6 w-6 text-primary" />
-            <span className="font-semibold">Sahaayi</span>
+            <span className="font-semibold text-3xl">Sahaayi</span>
           </Link>
           <Separator orientation="vertical" className="h-6" />
-          <h1 className="text-xl font-semibold">Your Dashboard</h1>
+          <h1 className="text-xl font-semibold hidden lg:block ">Dashboard</h1>
         </div>
         <div className="flex items-center gap-4">
           <Dialog open={showPostJobDialog} onOpenChange={setShowPostJobDialog}>
@@ -418,7 +418,7 @@ export default function UserDashboard() {
 
         {/* Main Dashboard Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="w-full overflow-x-auto">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="jobs">My Jobs</TabsTrigger>
             <TabsTrigger value="workers">Find Workers</TabsTrigger>
@@ -427,7 +427,7 @@ export default function UserDashboard() {
 
           {/* Overview Tab */}
           <TabsContent value="overview" className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Recent Activity */}
               <Card>
                 <CardHeader>
@@ -626,7 +626,7 @@ export default function UserDashboard() {
                 Available Workers Near You
               </h3>
               <div className="flex gap-2">
-                <Input placeholder="Search workers..." className="w-64" />
+                <Input placeholder="Search workers..." className="w-64 hidden sm:block" />
                 <Button variant="outline" size="sm">
                   <Filter className="h-4 w-4 mr-2" />
                   Filter
@@ -723,7 +723,7 @@ export default function UserDashboard() {
           {/* gemini opened */}
           {/* Inside Profile Tab */}
           <TabsContent value="profile" className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
                   <CardTitle>Personal Information</CardTitle>

@@ -110,7 +110,7 @@ export default function WorkerDashboard() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="flex justify-between items-center p-6 border-b bg-card">
+      <header className="flex flex-col sm:flex-row justify-between items-center p-6 border-b bg-card">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
             <HeartHandshake className="h-6 w-6 text-primary" />
@@ -207,7 +207,7 @@ export default function WorkerDashboard() {
 
         {/* Main Dashboard Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="w-full overflow-x-auto">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="jobs">Available Jobs</TabsTrigger>
             <TabsTrigger value="history">Job History</TabsTrigger>
@@ -216,7 +216,7 @@ export default function WorkerDashboard() {
 
           {/* Overview Tab */}
           <TabsContent value="overview" className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Recent Job Applications */}
               <Card>
                 <CardHeader>
@@ -360,7 +360,7 @@ export default function WorkerDashboard() {
 
           {/* Profile Tab */}
           <TabsContent value="profile" className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Contact Information */}
               <Card>
                 <CardHeader>

@@ -23,7 +23,7 @@ export default function HomePage() {
           {/* Hero Section */}
           <section className="space-y-6">
             <h1 className="text-4xl sm:text-6xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              സ്വാഗതം, Sahaayi!
+              Welcome to Sahaayi!
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               A humble platform to connect people who need help with the hands
@@ -35,14 +35,15 @@ export default function HomePage() {
           <section className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
             <Button asChild size="lg" className="flex-1">
               <Link href="/dashboard/user" className="flex items-center gap-2">
-                <Briefcase className="h-4 w-4" />
-                I want to hire a worker
+                <Briefcase className="h-4 w-4" />I want to hire a worker
               </Link>
             </Button>
             <Button variant="secondary" asChild size="lg" className="flex-1">
-              <Link href="/dashboard/worker" className="flex items-center gap-2">
-                <Users className="h-4 w-4" />
-                I am a worker
+              <Link
+                href="/dashboard/worker"
+                className="flex items-center gap-2"
+              >
+                <Users className="h-4 w-4" />I am a worker
               </Link>
             </Button>
           </section>
@@ -60,7 +61,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Connect with verified workers and trusted employers in your community.
+                  Connect with verified workers and trusted employers in your
+                  community.
                 </p>
               </CardContent>
             </Card>
@@ -74,7 +76,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Find the right person for your job or discover work opportunities nearby.
+                  Find the right person for your job or discover work
+                  opportunities nearby.
                 </p>
               </CardContent>
             </Card>
@@ -103,15 +106,28 @@ export default function HomePage() {
 
           {/* Footer */}
           <footer className="text-xs text-muted-foreground pt-12 border-t max-w-2xl mx-auto">
-            <p>Built with ❤️ by Kannan | Sahaayi Prototype</p>
+            <p>
+              Built with ❤️ by{" "}
+              <a href="https://github.com/kannanhacker123">Kannan</a> | Sahaayi
+              Prototype
+            </p>
             <div className="flex justify-center gap-4 mt-2">
-              <Link href="/privacy" className="hover:text-primary transition-colors">
+              <Link
+                href="/privacy"
+                className="hover:text-primary transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-primary transition-colors">
+              <Link
+                href="/terms"
+                className="hover:text-primary transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link href="/contact" className="hover:text-primary transition-colors">
+              <Link
+                href="/contact"
+                className="hover:text-primary transition-colors"
+              >
                 Contact
               </Link>
             </div>
