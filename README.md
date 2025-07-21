@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sahaayi 🌿
 
-## Getting Started
+**Sahaayi** (സഹായി) is a humble and inclusive platform that connects people who need help with the hands that are ready to work. Designed with simplicity and dignity in mind, it aims to make local job opportunities accessible to all — starting from Perumbavoor, Kerala 🇮🇳.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠 Built With
+
+* **Next.js 14 App Router**
+* **Tailwind CSS v4** with OKLCH theming
+* **ShadCN/UI** components
+* **Dark/Light Mode** with `next-themes`
+* **Vercel** for deployment
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/yourusername/sahaayi.git
+   cd sahaayi
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the dev server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+---
+
+## 🎨 Theme
+
+The project uses a full Tailwind CSS variable-based theme with the following semantic color tokens:
+
+```css
+--background, --foreground, --primary, --accent, --muted, etc.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can customize your color scheme in `globals.css`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+* Clean, accessible UI with Tailwind & ShadCN
+* CSS variable-powered theme (light/dark)
+* Role-based entry: **User** or **Worker**
+* Minimal design ready for expansion (auth, DB, booking, etc.)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Current Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+As of now, only the following pages are functional:
 
-## Deploy on Vercel
+* `app/page.tsx`
+* `app/dashboard/works/page.tsx`
+* `app/dashboard/user/page.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can view the live prototype here: **[Live Site on Vercel](https://sahaayi-mocha.vercel.app/)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 💡 Vision
+
+> "Build first, legal and ownership steps can follow later."
+
+This project is in the **prototype stage** and not production-ready. Domain, backend, database, and business logic will be added progressively.
+
+---
+
+## 📦 Deployment
+
+Deployed via **[Vercel](https://vercel.com)**
+
+---
+
+## 📄 License
+
+This project is open-sourced under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Acknowledgements
+
+* [ShadCN UI](https://ui.shadcn.com)
+* [Tailwind Labs](https://tailwindcss.com)
+* Everyone working toward a more equal world 🌍
+
+---
+
+## 👤 Made by
+
+**Kannan**
+Kerala, India 🇮🇳
