@@ -42,7 +42,7 @@ export default function NotFound() {
             Oops! Page Not Found
           </h1>
           <p className="text-muted-foreground text-sm">
-            Looks like you've discovered uncharted digital territory
+            Looks like you&apos;ve discovered uncharted digital territory
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export default function NotFound() {
         <div className="mb-6 p-4 bg-secondary/50 rounded-lg border-l-4 border-accent">
           <p className="text-foreground font-medium text-sm mb-2">{excuse}</p>
           <p className="text-muted-foreground text-xs">
-            Don't worry, even GPS gets confused sometimes! 🧭
+            Don&apos;t worry, even GPS gets confused sometimes! 🧭
           </p>
         </div>
 
